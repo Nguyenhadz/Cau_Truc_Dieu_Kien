@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h1>Check the number of days in the month</h1>
+<body>
+<p><input type="number" id="month"/><input type="button" onclick="clickCheck()" value="Check"/></p><br>
+<p id="result"></p>
+<script>
+  function clickCheck(){
+    let x = parseInt(document.getElementById('month').value);
+    if ( x > 0 && x < 13) {
+      switch (x) {
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+          document.getElementById('result').innerHTML = "Tháng " + x + " có 31 ngày";
+          break;
+        case 2:
+          document.getElementById('result').innerHTML = "Tháng " + x + " có 28 hoặc 29 ngày";
+          break;
+        default:
+          document.getElementById('result').innerHTML = "Tháng " + x + " có 30 ngày";
+      }
+    } else {
+      document.getElementById('result').innerHTML = "Nhập lại tháng";
+    }
+  }
+
+</script>
+
+
+</body>
+</html>
