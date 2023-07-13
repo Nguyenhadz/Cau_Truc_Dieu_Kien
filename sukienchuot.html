@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img id="image" src="picture123.jpg" style="width: 100px; height: 100px" alt="error"/>
+<p>The thief is about to run away, click on the box below to catch him:</p>
+<button type="button" onclick="inhere();">Click me!</button>
+<script>
+    let picture = null;
+    picture = document.getElementById('image');
+    function init(){
+        picture = document.getElementById('image');
+        picture.style.position = 'relative';
+        picture.style.left = '0px';
+    }
+    function inhere(){
+        picture.style.left = parseInt(picture.style.left) + 10 + 'px';
+    }
+    window.onload = init;
+</script>
+
+
+
+</body>
+</html>
