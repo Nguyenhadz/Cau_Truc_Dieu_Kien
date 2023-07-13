@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 style="text-align: center; font-size: 20px; color: red"><b>Do you love me?</b></h1>
+<p id="YesLove" style="text-align: center"><button onclick="agree()" >Yes</button></p>
+<p id="noLove" style="text-align: center"><button type="button" onmouseover="Nolove()">NO</button> </p>
+<script>
+  function agree(){
+    alert("Yes. you are right");
+  }
+  function Nolove() {
+      let picture = null;
+      picture = document.getElementById('noLove');
+      picture.style.position = 'relative';
+      picture.style.left = '0px';
+      picture.style.top = '0px';
+    let maxy = window.innerHeight;
+    let maxi = window.innerWidth;
+    let x = Math.random();
+    console.log(maxi, maxy, x)
+    picture.style.left = parseInt(picture.style.left) + maxi * x/2 +'px';
+    picture.style.top = parseInt(picture.style.top) + maxy * x/2 + 'px';
+  }
+  window.onload = init;
+</script>
+</body>
+</html>
