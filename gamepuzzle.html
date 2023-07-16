@@ -7,19 +7,19 @@
 <body>
 <table style="border: 0">
     <tr>
-        <td><button type="button" onclick="a()" style="height: 79px; width: 304px; border: 0; background-color: white"><img id="anh1" src="gau 1.jpg" alt="error" style="width: 304px; height: 79px"/></button></td>
+        <td><img id="anh1" src="gau 1.jpg" alt="error" style="width: 304px; height: 79px" onclick="a()"/></td>
     </tr>
     <tr>
-        <td><button type="button" onclick="d()" style="height: 79px; width: 304px; border: 0;background-color: white"><img id="anh2" src="khi 2.jpg" alt="error" style="width: 304px; height: 79px"/></button></td>
+        <td><img id="anh2" src="khi 2.jpg" alt="error" style="width: 304px; height: 79px" onclick="d()"/></td>
     </tr>
     <tr>
-        <td><button type="button" onclick="x()" style="height: 79px; width: 304px; border: 0;background-color: white"><img id="anh3" src="meo 3.jpg" alt="error" style="width: 304px; height: 79px"/></button></td>
+        <td><img id="anh3" src="meo 3.jpg" alt="error" style="width: 304px; height: 79px" onclick="u()"/></td>
     </tr>
     <tr>
-        <td><button type="button" onclick="y()" style="height: 79px; width: 304px; border: 0;background-color: white"><img id="anh4" src="gau 4.jpg" alt="error" style="width: 304px; height: 79px"/></button></td>
+        <td><img id="anh4" src="gau 4.jpg" alt="error" style="width: 304px; height: 79px" onclick="o()"/></td>
     </tr>
     <tr>
-        <td><button type="button" onclick="z()" style="height: 79px; width: 304px; border: 0;background-color: white"><img id="anh5" src="khi 5.jpg" alt="error" style="width: 304px; height: 79px"/></button></td>
+        <td><img id="anh5" src="meo 5.jpg" alt="error" style="width: 304px; height: 79px" onclick="z()"/></td>
     </tr>
 
 </table>
@@ -61,7 +61,7 @@
         }
 
     }
-    function x() {
+    function u() {
         count++
         if (count > 3) {
             count = 1;
@@ -77,9 +77,9 @@
         if (count === 3) {
             img.src = "khi 3.jpg"
         }
-
+        console.log(count, img.src)
     }
-    function y() {
+    function o() {
         count++
         if (count > 3) {
             count = 1;
@@ -95,6 +95,7 @@
         if (count === 3) {
             img.src = "meo 4.jpg"
         }
+
 
     }
     function z() {
