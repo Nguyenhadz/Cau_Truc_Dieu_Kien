@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+</head>
+<body>
+<table style="border: 0">
+    <tr>
+        <td><button type="button" onclick="a()" style="height: 79px; width: 304px; border: 0; background-color: white"><img id="anh1" src="gau 1.jpg" alt="error" style="width: 304px; height: 79px"/></button></td>
+    </tr>
+    <tr>
+        <td><button type="button" onclick="d()" style="height: 79px; width: 304px; border: 0;background-color: white"><img id="anh2" src="khi 2.jpg" alt="error" style="width: 304px; height: 79px"/></button></td>
+    </tr>
+    <tr>
+        <td><button type="button" onclick="x()" style="height: 79px; width: 304px; border: 0;background-color: white"><img id="anh3" src="meo 3.jpg" alt="error" style="width: 304px; height: 79px"/></button></td>
+    </tr>
+    <tr>
+        <td><button type="button" onclick="y()" style="height: 79px; width: 304px; border: 0;background-color: white"><img id="anh4" src="gau 4.jpg" alt="error" style="width: 304px; height: 79px"/></button></td>
+    </tr>
+    <tr>
+        <td><button type="button" onclick="z()" style="height: 79px; width: 304px; border: 0;background-color: white"><img id="anh5" src="khi 5.jpg" alt="error" style="width: 304px; height: 79px"/></button></td>
+    </tr>
+
+</table>
+<script>
+    let count = 1
+    function a() {
+        count++
+        if (count > 3) {
+            count = 1;
+        }
+        let img = document.getElementById('anh1')
+        if (count === 1) {
+            img.src = 'gau 1.jpg'
+        }
+        if (count === 2) {
+            img.src = "khi 1.jpg"
+
+        }
+        if (count === 3) {
+            img.src = "meo 1.jpg"
+        }
+
+    }
+    function d() {
+        count++
+        if (count > 3) {
+            count = 1;
+        }
+        let img = document.getElementById('anh2')
+        if (count === 1) {
+            img.src = 'khi 2.jpg'
+        }
+        if (count === 2) {
+            img.src = "gau 2.jpg"
+
+        }
+        if (count === 3) {
+            img.src = "meo 2.jpg"
+        }
+
+    }
+    function x() {
+        count++
+        if (count > 3) {
+            count = 1;
+        }
+        let img = document.getElementById('anh3')
+        if (count === 1) {
+            img.src = 'meo 3.jpg'
+        }
+        if (count === 2) {
+            img.src = "gau 3.jpg"
+
+        }
+        if (count === 3) {
+            img.src = "khi 3.jpg"
+        }
+
+    }
+    function y() {
+        count++
+        if (count > 3) {
+            count = 1;
+        }
+        let img = document.getElementById('anh4')
+        if (count === 1) {
+            img.src = 'gau 4.jpg'
+        }
+        if (count === 2) {
+            img.src = "khi 4.jpg"
+
+        }
+        if (count === 3) {
+            img.src = "meo 4.jpg"
+        }
+
+    }
+    function z() {
+        count++
+        if (count > 3) {
+            count = 1;
+        }
+        let img = document.getElementById('anh5')
+        if (count === 1) {
+            img.src = 'meo 5.jpg'
+        }
+        if (count === 2) {
+            img.src = "khi 5.jpg"
+
+        }
+        if (count === 3) {
+            img.src = "gau 5.jpg"
+        }
+
+    }
+</script>
+
+</body>
+</html>
